@@ -1,4 +1,4 @@
-dateModified: 1717512166
+dateModified: 1717512771
 elementSources:
   craft\elements\Entry:
     -
@@ -28,14 +28,14 @@ elementSources:
         - 'field:b1818203-9eff-4584-9ea3-c39aab4fb3f0' # Kleur
       type: native
     -
-      heading: ''
-      type: heading
-    -
-      heading: ''
-      type: heading
-    -
       key: 'section:cdb3ab49-66fb-4582-ad6d-51195eb25204' # Kleuren
       type: native
+    -
+      heading: ''
+      type: heading
+    -
+      heading: ''
+      type: heading
 email:
   fromEmail: robin.braibant@pxl.be
   fromName: 'Web Expert'
@@ -54,7 +54,6 @@ meta:
     0b825ca4-12cd-464d-a5f3-dd500a0c4723: Sneakers # Sneakers
     3d056b00-f42d-47e4-bc30-e14f28ac55da: blokken # blokken
     3d5ebfb2-b58d-4890-8705-cfc6be3e7f84: Startpagina # Startpagina
-    018fd177-ef58-4010-9804-b3fa8393977b: Login # Login
     21d73c87-fea9-45c4-bcd7-c7bcbbc36914: Simple # Simple
     49adc719-ffd2-491a-832b-7c6defaf41fa: 'Web Expert Engels' # Web Expert Engels
     519de1f8-b162-4b04-8923-fb072747ba56: Text # Text
