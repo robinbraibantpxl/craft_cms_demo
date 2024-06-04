@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 572daa2f-bca0-46ac-8c9f-8eb5a784b77b # Startpagina
+handle: home
+maxAuthors: 1
+name: Startpagina
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  49adc719-ffd2-491a-832b-7c6defaf41fa: # Web Expert Engels
+    enabledByDefault: true
+    hasUrls: true
+    template: _index.twig
+    uriFormat: __home__
+  df0d1799-8c87-4030-a2c5-1edfea893380: # Web Expert
+    enabledByDefault: true
+    hasUrls: true
+    template: _index.twig
+    uriFormat: __home__
+type: single

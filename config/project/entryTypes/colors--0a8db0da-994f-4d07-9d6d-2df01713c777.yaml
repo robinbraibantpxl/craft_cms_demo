@@ -1,0 +1,50 @@
+color: null
+fieldLayouts:
+  0d665ce8-9a01-4798-bacb-f95c2a2c3280:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Kleur
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 6cb19993-4b8e-47fc-8a89-4d4863f7e388
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fb702384-aba6-4214-9985-dec493dd9881
+        userCondition: null
+handle: colors
+hasTitleField: true
+icon: ''
+name: Kleuren
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

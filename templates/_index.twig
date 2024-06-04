@@ -1,0 +1,58 @@
+{% extends '_layout.twig' %}
+
+{% block content %}
+    <header class="header">
+        <div class="brand">
+            <a href="#" class="logo">
+                <i class="fas fa-shoe-prints"></i>
+            </a>
+            <div>
+                <h1 class="main-name">Snaky Sneakers</h1>
+                <p class="sub-name">Sneaker Reseller</p>
+            </div>
+        </div>
+        <div class="header-banner">
+            <h1 class="main-heading">Welcome</h1>
+            <h3 class="sub-heading">Find you preferred sneakers now</h3>
+            <button type="button" class="main-button">Buy now</button>
+        </div>
+    </header>
+    <section class="about">
+        <div class="about-left">
+            <img src="assets/images/team.jpg" alt="Picture of our team">
+        </div>
+        <div class="about-right">
+            <h1 class="main-heading">Our team</h1>
+            <h3 class="sub-heading">Only for the best sneaker experience</h3>
+            <div class="stars">
+                <i class="fas fa-star-of-life star"></i>
+                <i class="fas fa-star-of-life star"></i>
+                <i class="fas fa-star-of-life star"></i>
+            </div>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta alias voluptas error quam commodi minima adipisci est. Ipsa exercitationem assumenda repellendus nemo debitis dolorum sunt at alias et, nulla iste beatae rerum similique architecto explicabo ullam a quaerat commodi! Vitae odit architecto commodi natus tempora consequuntur repudiandae temporibus laudantium placeat.</p>
+            <div class="stars">
+                <i class="fas fa-star-of-life star"></i>
+                <i class="fas fa-star-of-life star"></i>
+                <i class="fas fa-star-of-life star"></i>
+            </div>
+            <button class="main-button" type="button">Read more</button>
+        </div>
+    </section>
+
+    {# {% set sneakers = craft.entries.section('sneakers').all() %} #}
+    {# {% set sneakers = craft.entries.section('sneakers').orderBy('price').all() %} #}
+    {% set sneakers = craft.entries.section('sneakers').orderBy('price DESC').limit(3).all() %}
+
+    {% if sneakers|length > 0 %}
+        <section class="gallery">
+            <div class="cards-wrapper">
+                {% for sneaker in sneakers %}
+                    {% include '_snippets/_sneakerCard.twig'%}
+                {% endfor %}
+            </div>
+        </section>
+    {% else %}
+        <div>Er zijn momenteel geen sneakers beschikbaar</div>
+    {% endif %}
+    
+{% endblock %}

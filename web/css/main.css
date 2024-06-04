@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+body-webkit-scrollbar {
+  display: none;
+}
+
+.card-overlay, .card-image, .hamburger-menu .menu {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  color: #003459;
+  text-decoration: none;
+  height: 110px;
+  width: 110px;
+  margin-right: 20px;
+}
+
+.main-name {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  color: #bbb;
+}
+
+.sub-name {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  color: #bbb;
+}
+
+.main-heading {
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  font-weight: 300;
+  color: #003459;
+  margin-bottom: 40px;
+}
+
+.sub-heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  color: #bbb;
+  margin-bottom: 80px;
+}
+
+.main-button {
+  width: 170px;
+  height: 45px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #003459;
+  background-color: transparent;
+  border: 1px, solid, #003459;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.main-button:hover {
+  background-color: #003459;
+  color: #bbb;
+}
+
+.card {
+  width: 33.3333%;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+}
+.card:hover .card-overlay {
+  left: 0;
+}
+.card-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: rgba(0, 52, 89, 0.5);
+  color: #fff;
+  z-index: 10;
+  flex-direction: column;
+  transition: left 0.7s;
+}
+.card-overlay-heading {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+.card-overlay-paragraph {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.card-overlay-button {
+  width: 150px;
+  height: 40px;
+  color: #003459;
+  background-color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #003459;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+}
+.card-image {
+  object-fit: contain;
+  padding: 5px;
+}
+
+.hamburger-menu {
+  z-index: 250;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 7.5%;
+  right: 5%;
+  cursor: pointer;
+}
+.hamburger-menu .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: transform 0.5s;
+}
+.hamburger-menu .menu-line {
+  width: 100%;
+  height: 4px;
+  background-color: #003459;
+  transition: all 0.5s 0.5s;
+  transform-origin: right;
+}
+
+.button {
+  background-color: #003459; /* Green */
+  border: none;
+  color: white;
+  margin: 0.5rem 0;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 10rem;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div, .select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #000;
+  padding-bottom: 0.5rem;
+}
+
+/* Input field style */
+input[type=text] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid blue;
+  border-radius: 4px;
+}
+
+.form__input {
+  margin: 1rem 0;
+  width: 50%;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../assets/images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .brand {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-alternative {
+  width: 100%;
+  min-height: 50vh;
+}
+.header-alternative-banner {
+  margin: 0 auto;
+  padding: 10rem 0;
+  text-align: center;
+}
+
+.filter {
+  padding: 5rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.about {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.about-left {
+  width: 40%;
+  position: relative;
+  margin-left: -150px;
+}
+.about-left img {
+  width: 100%;
+  opacity: 0.7;
+}
+.about-right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+.about-right .stars {
+  margin: 30px 0;
+}
+.about-right .star {
+  font-size: 15px;
+  color: #003459;
+}
+.about-right .star + .star {
+  margin-left: 10px;
+}
+.about-right .description {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  color: #bbb;
+  text-align: justify;
+}
+.about-right .description::first-letter {
+  padding-left: 50px;
+}
+
+.gallery .cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 70px 0;
+}
+.footer-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.footer .social-media {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.footer .social-media-item {
+  list-style: none;
+}
+.footer .social-media-link {
+  text-decoration: none;
+  font-size: 50px;
+  color: #bbb;
+  transition: color 0.7s;
+}
+.footer .social-media-link:hover {
+  color: #003459;
+}
+.footer-copyright-paragraph {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  color: #bbb;
+}
+
+.navbar {
+  position: relative;
+  z-index: 200;
+}
+.navbar-navigation {
+  display: flex;
+}
+.navbar-navigation-left {
+  width: 50vw;
+  height: 100vh;
+  background-color: #003459;
+  position: fixed;
+  left: -50vw;
+  transition: left 0.8s;
+}
+.navbar-navigation-left .left-img {
+  width: 50%;
+  position: absolute;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.8);
+  opacity: 0.7;
+  border-radius: 10px;
+}
+.navbar-navigation-left .left-img-1 {
+  top: 2%;
+  left: 2%;
+}
+.navbar-navigation-left .left-img-2 {
+  bottom: 3%;
+  right: 4%;
+}
+.navbar-navigation-left .left-img-3 {
+  top: 30%;
+  left: 25%;
+}
+.navbar-navigation-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 100vh;
+  background-color: #bbb;
+  position: fixed;
+  right: -50vw;
+  transition: right 0.8s;
+}
+.navbar-navigation-right .nav-list-item {
+  list-style: none;
+}
+.navbar-navigation-right .nav-list-link {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+  display: block;
+  margin: 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 80px;
+  color: #f9f9f9;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.5s;
+}
+.navbar-navigation-right .nav-list-link:hover {
+  color: #003459;
+  letter-spacing: 4px;
+}
+
+.checkbox {
+  display: none;
+}
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+  left: 0;
+}
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+  right: 0;
+}
+.checkbox:checked ~ .hamburger-menu .menu {
+  transform: rotate(90deg);
+}
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+  transform: rotate(-40deg);
+}
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+  opacity: 0;
+}
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+  transform: rotate(40deg);
+}
+
+/*# sourceMappingURL=main.css.map */

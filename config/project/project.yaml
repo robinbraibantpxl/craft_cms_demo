@@ -1,0 +1,102 @@
+dateModified: 1717512166
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: singles
+      tableAttributes:
+        - link
+      type: native
+    -
+      heading: Sneakers
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:dea38989-2ed2-4db7-bc89-0bd073d6c182' # Sneakers
+      tableAttributes:
+        - 'field:fd445757-8cfd-45f7-9b1a-65a583956b73' # Prijs
+        - link
+        - 'field:b1818203-9eff-4584-9ea3-c39aab4fb3f0' # Kleur
+      type: native
+    -
+      heading: ''
+      type: heading
+    -
+      heading: ''
+      type: heading
+    -
+      key: 'section:cdb3ab49-66fb-4582-ad6d-51195eb25204' # Kleuren
+      type: native
+email:
+  fromEmail: robin.braibant@pxl.be
+  fromName: 'Web Expert'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  files:
+    hasUrls: true
+    name: Bestanden
+    settings:
+      path: '@webroot/files'
+    type: craft\fs\Local
+    url: /files
+meta:
+  __names__:
+    0a8db0da-994f-4d07-9d6d-2df01713c777: Kleuren # Kleuren
+    0b825ca4-12cd-464d-a5f3-dd500a0c4723: Sneakers # Sneakers
+    3d056b00-f42d-47e4-bc30-e14f28ac55da: blokken # blokken
+    3d5ebfb2-b58d-4890-8705-cfc6be3e7f84: Startpagina # Startpagina
+    018fd177-ef58-4010-9804-b3fa8393977b: Login # Login
+    21d73c87-fea9-45c4-bcd7-c7bcbbc36914: Simple # Simple
+    49adc719-ffd2-491a-832b-7c6defaf41fa: 'Web Expert Engels' # Web Expert Engels
+    519de1f8-b162-4b04-8923-fb072747ba56: Text # Text
+    572daa2f-bca0-46ac-8c9f-8eb5a784b77b: Startpagina # Startpagina
+    609b50fe-0974-43e3-b42c-929fd1574e5f: 'Facebook URL' # Facebook URL
+    770ce4a3-7ca8-4558-b014-479fcb4ddb5e: Afbeelding # Afbeelding
+    9835d417-75ec-4190-a8a2-fb5eeabb0ec4: 'Hero Afbeelding' # Hero Afbeelding
+    93072a96-b65a-41ea-affb-1c3aa926763a: Bestanden # Bestanden
+    30517588-522b-4a74-8ca8-4a2b121d31dc: 'Sneakers Overzicht' # Sneakers Overzicht
+    67765763-385a-42f9-a6d9-e39876a64542: Instagram # Instagram
+    a3e889f2-5ec0-4d28-879e-e83f828dab2f: Login # Login
+    ac63f299-82f5-4f8b-9f5f-24d1496028ca: 'Web Expert' # Web Expert
+    b1ef33e9-9a2c-4970-a081-ca08f9c28190: Tekst # Tekst
+    b1818203-9eff-4584-9ea3-c39aab4fb3f0: Kleur # Kleur
+    c145b76d-f1b8-4a06-8c95-70cb973425e5: 'Sociale Media' # Sociale Media
+    c37718a4-2455-456a-a28a-4ab755d1ddb3: Titel # Titel
+    cdb3ab49-66fb-4582-ad6d-51195eb25204: Kleuren # Kleuren
+    d1432e2e-47d7-4e76-aeec-da4fec2d3742: Afbeelding # Afbeelding
+    dea38989-2ed2-4db7-bc89-0bd073d6c182: Sneakers # Sneakers
+    df0d1799-8c87-4030-a2c5-1edfea893380: 'Web Expert' # Web Expert
+    f1299ccc-119c-44ac-ab0f-ba5dda4b5006: 'Sneakers Overzicht' # Sneakers Overzicht
+    fd445757-8cfd-45f7-9b1a-65a583956b73: Prijs # Prijs
+    fdc0c5de-9ce5-4a92-ad55-c589f3d4a8d6: Sneakers # Sneakers
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  dumper:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: pro
+  live: true
+  name: 'Web Expert'
+  schemaVersion: 5.0.0.20
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

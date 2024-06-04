@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 30517588-522b-4a74-8ca8-4a2b121d31dc # Sneakers Overzicht
+handle: sneakersOverview
+maxAuthors: 1
+name: 'Sneakers Overzicht'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  df0d1799-8c87-4030-a2c5-1edfea893380: # Web Expert
+    enabledByDefault: true
+    hasUrls: true
+    template: _sneakers/_overview.twig
+    uriFormat: our-sneakers
+type: single

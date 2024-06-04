@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: nl-BE
+name: 'Web Expert'
+primary: true
+siteGroup: ac63f299-82f5-4f8b-9f5f-24d1496028ca # Web Expert
+sortOrder: 1

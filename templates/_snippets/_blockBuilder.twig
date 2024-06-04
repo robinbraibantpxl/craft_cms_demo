@@ -1,0 +1,9 @@
+{% set blocks = entry.blocks.all() %}
+
+{% for block in blocks %}
+    <div>
+        <div>
+            {% include '_snippets/_blocks/_' ~ block.type.handle %}
+        </div>
+    </div>
+{% endfor %}

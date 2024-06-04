@@ -1,0 +1,35 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 0b825ca4-12cd-464d-a5f3-dd500a0c4723 # Sneakers
+handle: sneakers
+maxAuthors: 1
+name: Sneakers
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  49adc719-ffd2-491a-832b-7c6defaf41fa: # Web Expert Engels
+    enabledByDefault: true
+    hasUrls: true
+    template: _sneakers/_entry.twig
+    uriFormat: 'our-sneakers/{slug}'
+  df0d1799-8c87-4030-a2c5-1edfea893380: # Web Expert
+    enabledByDefault: true
+    hasUrls: true
+    template: _sneakers/_entry.twig
+    uriFormat: 'our-sneakers/{slug}'
+structure:
+  maxLevels: 1
+  uid: 96e28752-5701-4580-bd20-c55aeb9f54ba
+type: structure

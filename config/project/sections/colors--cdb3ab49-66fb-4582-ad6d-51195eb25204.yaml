@@ -1,0 +1,18 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 0a8db0da-994f-4d07-9d6d-2df01713c777 # Kleuren
+handle: colors
+maxAuthors: 1
+name: Kleuren
+propagationMethod: all
+siteSettings:
+  df0d1799-8c87-4030-a2c5-1edfea893380: # Web Expert
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 862b16ef-8774-4ab2-899a-0bfa90e59b11
+type: structure

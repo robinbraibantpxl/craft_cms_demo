@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: blocks
+instructions: null
+name: blokken
+searchable: true
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - b1ef33e9-9a2c-4970-a081-ca08f9c28190 # Tekst
+    - d1432e2e-47d7-4e76-aeec-da4fec2d3742 # Afbeelding
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

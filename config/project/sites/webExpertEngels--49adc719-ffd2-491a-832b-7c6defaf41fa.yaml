@@ -1,0 +1,9 @@
+baseUrl: '@baseUrlEn'
+enabled: '1'
+handle: webExpertEngels
+hasUrls: true
+language: en-BE
+name: 'Web Expert Engels'
+primary: false
+siteGroup: ac63f299-82f5-4f8b-9f5f-24d1496028ca # Web Expert
+sortOrder: 2

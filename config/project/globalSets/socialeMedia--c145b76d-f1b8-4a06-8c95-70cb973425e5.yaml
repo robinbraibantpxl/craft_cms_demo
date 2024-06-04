@@ -1,0 +1,27 @@
+fieldLayouts:
+  ab3eddae-cf8f-40e5-af8f-178bfd172372:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 609b50fe-0974-43e3-b42c-929fd1574e5f # Facebook URL
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a096a33-e60d-4dbc-8492-8ab6cd075d24
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Sociale Media URL''s'
+        uid: 52344357-f5c2-4cee-84e5-16af9209f291
+        userCondition: null
+handle: socialeMedia
+name: 'Sociale Media'
+sortOrder: 3

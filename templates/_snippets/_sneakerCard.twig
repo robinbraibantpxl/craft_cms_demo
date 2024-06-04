@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-overlay">
+        <h1 class="card-overlay-heading">{{sneaker.title}}</h1>
+        <p class="card-overlay-paragraph">Price: {{sneaker.price|money}}</p>
+        <button class="card-overlay-button">
+            <a href="{{sneaker.url}}">{{ "sneakercard.orderbutton"|t }}</a>
+        </button>
+    </div>
+    {% set sneakerImage = sneaker.image.one()%}
+    {% if sneakerImage %}
+        <img src="{{sneakerImage.url}}" alt="{{sneakerImage.title}}" class="card-image">
+    {% endif %}
+</div>

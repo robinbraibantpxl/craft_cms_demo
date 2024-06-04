@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  babe92de-3989-4220-8357-f7d89d3ba60d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 6db31b95-4ab3-4056-a847-766eef74e095
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 770ce4a3-7ca8-4558-b014-479fcb4ddb5e # Afbeelding
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b964b4bb-64a0-4b2d-8c7e-e8ccc0513eae
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e6d5d557-a4cd-4eac-b30e-ba9ded9842a9
+        userCondition: null
+handle: afbeelding
+hasTitleField: false
+icon: ''
+name: Afbeelding
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: Afbeelding
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
